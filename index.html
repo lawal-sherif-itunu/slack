@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" sizes="32x32" href="./images/slack.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>slack.com</title>
+</head>
+<body>
+    <main>
+        <a href="https://lawal-sherif-itunu.github.io/slack/"><img src="images/slack-icon.png" alt="slack icon" class="logo"></a>
+
+        <h1>Sign in to Slack</h1>
+        <p>We suggest using the <strong>email address you use at work.</strong></p>
+
+        <a href="#" class="social-media google">
+            <img src="images/google.png" alt="google">
+            Sign In With Google
+        </a>
+        
+        <a href="#" class="social-media apple">
+            <i class="fa-brands fa-apple"></i>
+            Sign In With Apple
+        </a>
+
+        <div class="ruler">
+            <hr>
+            <p class="hr">OR</p>
+        </div>
+
+        <form class="signup-form" name="myForm" method="post" id="form">
+            <section>
+
+                <div class="container">
+                    <label for="name">Full name:</label><br>
+                    <input class="input input-box input-field" type="text" id="name" name="name" placeholder="Name"> <br>
+                    <div id="name-error"></div>
+                </div>
+
+                <div class="container">
+                    <label for="email">Email:</label><br>
+                    <input class="input input-box input-field" type="email" id="email" name="email" placeholder="Email"> <br>
+                    <div id="email-error"></div>
+                    <!-- <p class="email-error">You have entered an invalid email address!</p> -->
+                </div>
+
+                <div class="container">
+                    <label for="number">Phone number:</label><br>
+                    <input class="input input-box input-field" type="tel" id="number" name="number" placeholder="Number"> <br>
+                    <div id="number-error"></div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <label class="input-field" id="gender-input" for="gender" required>Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">female</label><br>
+                    <input type="radio" id="others" name="gender" value="others" required>
+                    <label for="others">Others</label>
+                    <div id="gender-error"></div>
+                    <br>
+                </div>
+
+                <div class="password-container">
+                    <label for="password">Password:</label><br>
+                    <input class="input input-box input-field" type="password" name="password" id="password" placeholder="Password"> <br>
+                    <div id="password-error"></div>
+                    <div id="passwordPattern-error"></div>
+                    <input type="checkbox" id="checkbox" onclick="myFunction()">
+                    <label for="checkbox">Show Password</label>
+                </div>
+
+                <div class="container">                    
+                    <input class="input input-supmit" type="submit" value="Submit">
+                </div>
+            </section>
+
+        </form>
+
+        <div class="ruler">
+            <hr>
+            <p class="hr">OR</p>
+        </div>
+        
+
+        <form>
+            <input class="input email-input" type="email" id="email" name="email" placeholder="name@work-email.com"> <br>
+            <input class="input sign-supmit" type="submit" value="Sign In With Email">
+        </form>
+
+        <div class="magic-code">
+            <img src="images/star.png" alt="star">
+            <p>We’ll email you a magic code for a password-free sign in. Or you can <a href="#">sign in manually instead.</a></p>
+        </div>
+
+        <h3 class="signed-in"><strong>You’re already signed in to…</strong></h3>
+        <div class="logins">
+            <div class="techrity">                
+                <div class="group">
+                    <img src="images/techrity.jpg" alt="techrity-logo">
+                    <div class="group-info">
+                        <h3><strong>Techrity</strong></h3>
+                        <p>techrityorg.slack.com</p>
+                    </div>
+                </div>
+                <button>Open</button>
+            </div>
+            
+            <div class="frontend-mentor">                
+                <div class="group">
+                    <img src="images/frontend-mentor.png" alt="frontend mentor logo">
+                    <div class="group-info">
+                        <h3><strong>Frontend Mentor</strong></h3>
+                        <p>frontendmentor.slack.com</p>
+                    </div>
+                </div>
+                <button>Open</button>
+            </div>
+        </div>
+        
+
+        <footer>
+            <a href="#">Privacy & Terms</a>
+            <a href="#">Contact Us</a>
+
+            <div class="change">
+                <img class="globe" src="images/Globe_icon.svg.png" alt="Globe_icon">
+                <p>Change region</p>
+                <img class="arrow" src="images/down-arrow.svg" alt="down-arrow">
+            </div>
+        </footer>
+
+    </main>
+
+    <div class="popup-wrapper">
+        <div class="popup">
+            <div class="popup-close">x</div>
+            <h2>SideHustle</h2>
+            <p>Thanks for signing up...</p>
+            <a href="#">Proceed to Dashboard</a>
+            <a class="back" href="#">Back to edit form</a>
+        </div>
+    </div>
+
+    <div class="region">
+        <div class="change-region">
+            <h3 class="click-region"><strong>Change region</strong></h3>
+            <p>Selecting a different region will change the language and content of Slack.com.</p>
+    
+            <div class="countries">
+                <div class="americans">
+                    <h3><strong>Americans</strong></h3>
+                    <a href="#">Latinoamérica (Español)</a>
+                    <a href="#">Brasil (Português)</a>
+                    <a href="#">United States (English)</a>
+                </div>
+                <div class="europe">
+                    <h3><strong>EUropa</strong></h3>
+                    <a href="#">Deutschland (Deutsch)</a>
+                    <a href="#">España (Español)</a>
+                    <a href="#">France (Français)</a>
+                    <a href="#">Italia (italiano)</a>
+                    <a href="#">United Kingdom (English)</a>
+                </div>
+                <div class="asia">
+                    <h3><strong>Asien-Pazifik</strong></h3>
+                    <a href="#">简体中文</a>
+                    <a href="#">繁體中文</a>
+                    <a href="#">India (English)</a>
+                    <a href="#">日本 (日本語)</a>
+                    <a href="#">한국어</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/f6564dd69e.js" crossorigin="anonymous"></script>
+    <script src="sandbox.js"></script>
+</body>
+</html>
